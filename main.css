@@ -2,7 +2,7 @@ body{ padding: 0; margin: 0; background-color: rgb(55,52,53); font-family: 'Jose
 
 .navbar {width: 75%; margin: 0 auto; position: inherit; }
 
-.nav-link { color: #fff; }
+.collapse .navbar-nav .nav-item .nav-link  { color: #fff; }
 
 hr { width: 75%; height:2px; border-width:0; color:gray; background-color:rgb(255,159,0); }
 
@@ -11,6 +11,8 @@ hr { width: 75%; height:2px; border-width:0; color:gray; background-color:rgb(25
 .container p{ font-family: Josefin Sans; line-height: 30px; color: #fff; margin-top: 40px; }
 
 samp { font-family: Josefin Sans; color: rgb(255,159,0); font-weight: 800; }
+
+h1 {color: #fff; font-weight: 100; font-size: 25px; text-align: center;}
 
 .link { text-decoration: none; color: rgb(0,175,239); }
 
