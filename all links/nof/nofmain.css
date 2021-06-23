@@ -1,0 +1,115 @@
+
+*{
+			font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+body {
+  background-color: #ccc;
+}    
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
+
+
+/* navbar */
+
+.navbar {
+  background-color:rgb(232,230,230) ;
+  
+}
+
+.navbar img {
+  width: 150px;
+
+}
+
+.navbar a {
+  color: #000 !important;
+  font-weight: 600;
+}
+
+
+.stick {
+  color: white;
+  width: 160px;
+  height: auto;
+  margin: 10px 0;
+  position: fixed;
+  text-align: center;
+  display: block;
+  right: 0px;
+  z-index: 10;
+  height: 50px;
+  font-size: 22px;
+  padding-top: 10px;
+  font-weight: 600;
+  box-shadow: 5px 10px 8px 0px #000;
+}
+
+.stick:hover {
+  color: white;
+}
+
+.btnone {
+  top: 280px;
+  background: #f44;
+}
+
+.btnone:hover {
+  background-color: #44e;
+}
+
+.btntwo {
+  color: #000;
+  top: 350px;
+  background: #fd3;
+}
+
+.btntwo:hover {
+  background-color: #44e;
+}
+
+
+/* section 6 */
+
+.mrg {
+  margin-bottom: 50px;
+}
+
+.sec-six {
+  background-color: #ccc;
+}
+
+.sec-six h6 {
+  margin-top: 40px;
+  font-size: 18px;
+}
+ 
+.sec-six ul li {
+  list-style: none;
+  line-height: 2.5;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sec-six ul li a{
+  color: #555;
+}
+
+.sec-eight {
+  color: #fff;
+  font-size: 12px;
+}
+
+.sec-eight a:hover {
+  color: #fd5;
+  }
+
+.sec-eight .row {
+  margin: auto 2%;
+  padding: 5px;
+}
+
+
+
