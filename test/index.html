@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decyfr sport</title>
+    <link rel="stylesheet" href="css/fontawsome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body style="background-color:black";>
+    <div class="index">
+        <div id="navigation" class="nv">
+            <div id="menu" onclick="onclickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <div class="nav" id="nav">
+                <div class="col-menu">
+                    <a href="#">ABOUT</a>
+                    <a href="#">WHAT’S COMING NEXT?</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="main">
+            <div class="center">
+                <video class="video" autoplay>
+                    <source src="video/Final Landing Page Reel - Decyfr-1.mp4" type="video/mp4">
+                </video>
+                
+                <a class="active" href="#nfl-nxt"><img class="logo hidding" src="img/brand/logo1.png" alt=""></a>
+            </div>        
+        </section>
+
+        <section class="social">
+            <a href=""><img src="img/social-media/facebook.svg" alt=""></i></a>
+            <a href=""><img src="img/social-media/Instagram.svg" alt=""></a>
+            <a href=""><img src="img/social-media/Twitter.svg" alt=""></a>
+        </section>
+    </div>
+
+
+    <section class="container" id="nfl-nxt">
+        
+             <img src="img/theme/NFL IN 10 STEPS.png" alt="">           
+            <a class="glow-off" href="Green Bay Postcard.html"><img src="img/theme/glow.png" alt=""><div class="chevron"></div></a>
+            
+            <div class="box">
+                <p>NFL IN 10 STEPS</p>
+            </div>
+        
+    </section>
+    <script>
+        //vanilla js menu 
+
+        function onclickMenu(){
+            document.getElementById("menu").classList.toggle("icon");
+            document.getElementById("nav").classList.toggle("change");
+        }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+    
+    <script> 
+
+        function setHtml(){
+            $('.video').addClass('video-disable');
+            $('.logo').removeClass('hidding')
+        }
+        setTimeout(setHtml, 22000);        
+
+        $('.active').on('click', function(){
+            $('.container').addClass('reveal');
+        })
+
+        $(function() {
+            $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 2000);
+                    return false;
+                }
+            });
+        });
+
+    </script>
+
+    
+
+</body>
+</html>
