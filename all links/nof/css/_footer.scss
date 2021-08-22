@@ -1,0 +1,46 @@
+.footer{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff4040;
+
+    .soical {
+        display: flex;
+        &-icon {                                   
+            padding: .8rem 1rem;  
+            
+            
+            i{
+                font-size: 1rem;
+                width: 1rem;
+                text-align: center;
+                color: #fff;
+            }
+        }
+
+        
+    }
+
+    .copyright{
+        text-align: center;
+        font-size: clamp(8px, 5vw, 18px);
+        color: #fff;
+    }
+
+}
+
+
+@media screen and (max-width: 850px) {
+    .footer{
+        
+        align-items: center;
+        padding: 2rem 0;
+        flex-direction: column;
+        
+        .copyright{
+            margin-top: 1.5rem;
+        }
+    
+    }
+}

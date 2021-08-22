@@ -1,0 +1,25 @@
+/* navigation */
+
+.navbar {
+    background-color: $grayColor;
+	padding: 1rem;    
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .5);
+
+    a {
+        color: #000 !important;
+        font-weight: 400;
+        font-family: 'barlow';
+
+        &:hover{
+            color: $primaryColor!important ;
+        }
+    }
+
+    .active{
+        color: $primaryColor!important;
+    }
+
+    img {
+        width: 150px;
+    }
+}

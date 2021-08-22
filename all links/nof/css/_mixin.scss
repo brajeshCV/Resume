@@ -1,0 +1,11 @@
+@mixin btn() {
+    background-color: $primaryColor;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    width: clamp(160px, 10vw, 250px);
+    margin: 10px;
+    cursor: pointer;
+}
+

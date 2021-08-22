@@ -1,0 +1,62 @@
+section.prize{
+    margin-top: 150px;
+
+    .sm-heading{
+        font-size: .7rem;
+    }
+    .big-heading{
+        font-family: Montserrat;
+        color: $fontGray;
+        font-weight: 600;
+    }
+
+    img{
+        width: 100%;
+    }
+    ol{
+        font-family: Montserrat;
+        font-weight: 300;
+
+        p{
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+}
+
+section.prize-phase{
+    background: $primaryColor;
+    padding: clamp(10px, 2vw, 25px);
+
+    h2{
+        font-family: 'Montserrat';
+        font-weight: 600;
+        color: $fontGray;
+        font-size: clamp(18px, 3vw, 30px);
+    }
+    ol{
+        letter-spacing: 1px;
+        line-height: 31px;
+        font-weight: 300;
+        font-size: clamp(12px, 2vw, 17px);
+        padding: clamp(10px, 1vw, 15px) clamp(15px, 2vw, 30px);
+        p{
+            line-height: 20px;
+            font-size: 12px;
+        }
+    }
+
+}
+
+section.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    padding: 2rem;
+
+    img{
+        max-width: 100%;
+    }
+}

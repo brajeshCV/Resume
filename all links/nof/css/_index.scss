@@ -1,0 +1,256 @@
+//banner css
+body{
+    font-family: Montserrat;
+}
+.banner {
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.26)), url(../img/theme/main-banner.png) ;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 522px;
+    margin-top: 100px;
+
+    &-space{
+        text-align: center;
+        padding: clamp(20px, 1.2rem, 5rem);
+
+        p{
+            color: white;             
+            font-weight: 300;
+            font-size: clamp(10px, 18px, 25px);
+        }
+
+        .banner-txt{
+            color: $primaryColor;
+            font-size: clamp(15px, 2vw, 70px);
+            font-weight: 800;
+            line-height: clamp(20px, 2.5vw, 70px);
+            padding: clamp(20px, 2.5vw, 70px);
+            width: clamp(250px, 50%, 700px);
+            margin: 1rem auto;
+        }
+
+    }
+    .btn {
+        @include btn();
+    }
+}
+
+
+// subject 
+
+.subject{
+    background-color: $grayColor;
+    .main-subject{
+        display: flex;
+        justify-content: center;
+        padding: clamp(18px, 2rem, 70px);        
+
+        a{
+            position: relative;
+            z-index: 1;
+
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 5%;                
+                box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, .5);
+                z-index: -1;
+    
+            }
+        }       
+
+    }
+}
+
+//About Us
+
+.about-us {
+    background-color: $primaryColor;
+    padding: clamp(35px, 5vw, 70px);
+
+    &-title{
+        color: #fff;
+        font-weight: 600;
+        font-size: clamp(16px, 8vw, 40px);
+        padding-bottom: 10px;                       
+    }
+
+    &-sub-title {
+             
+        font-weight: 300;
+        font-size: clamp(10px, 5vw, 22px);
+
+        span{
+            font-weight: 500;
+        }
+    }
+
+    &-para {
+        font-weight: 400;
+        font-size: clamp(10px, 4vw, 16px);
+       
+    }
+
+    .reposive{
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        position: relative;
+
+        .video{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+}
+
+//why nof
+.why-nof{
+    padding: clamp(20px, 5vw, 35px);
+
+    &-title{
+        font-weight: 600;
+        font-size: clamp(16px, 8vw, 40px);
+        color: $primaryColor;
+        padding: 1rem 0;
+    }
+
+    
+    img{
+        width: 100%;
+    }
+}
+
+
+//practise book
+
+.practise-book{
+    background-image: url('../img/theme/practice-book-image.png');
+    height: auto;
+    padding: 4rem;
+    padding-bottom: 150px;
+
+    .warp{
+        padding: 1rem 0;        
+        .flexes {
+            display: flex;
+            justify-content: center;
+            padding: 5rem 0;
+
+            .practise-book-container{
+                position: relative;
+                width: 217px;
+                height: 221px;
+                display: flex;
+                justify-content: center;
+                align-items: center;    
+                
+                &-img{
+                    width: 217px;
+                    height: 212px;
+                }
+        
+                &-detail{
+                    background-color: #fd5;
+                position: absolute;
+                top: 180px;
+                left: 5px;
+                width: 207px;
+                height: 166px;
+                font-size: 18px;
+                font-weight: 800;
+                text-align: center;
+
+                    p{
+                        padding-top: 20px;
+                    }
+                    
+                    .btn3{
+                        background-color: #fff;
+                        border: 2px solid #404040;
+                        font-size: 16px;
+                        padding: 10px;
+                        width: 260px;
+                        margin: 10px;
+                        color: #000;
+                        border-radius: 25px;
+                        cursor: pointer;
+                        transition: 500ms ease;
+
+                        &:hover{
+                            background-color: #404040;                                           
+                        }
+
+                        a{
+                            text-decoration: none;
+                            color: #555;
+                        }
+
+                        &:hover a{
+                            color: #fff;                                           
+                        }
+                    }
+                }
+            }
+
+        }
+        
+        
+    }   
+
+}
+
+//links
+
+.links{
+    background-color: #c7c7c7;
+    padding: 4rem 0;
+
+    .warp{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        h6{
+            font-family: barlow;
+            font-size: clamp(12px, 1rem, 17px);
+            font-weight: 600;
+            text-align: center;
+            
+            
+        }
+
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                line-height: 2.5;
+                font-size: 14px;
+                font-weight: 500;
+        
+                a{
+                    color: #555;
+                    text-decoration: none;
+                    font-family: barlow;
+                    font-weight: 300;
+                    font-size: clamp(14px, 1rem, 18px);
+                }
+            }
+        }
+
+        
+
+    }
+
+    
+
+    
+}

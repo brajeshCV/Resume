@@ -1,0 +1,757 @@
+@font-face {
+  font-family: Din next;
+  src: url(../font/Din-next/DIN-Next-W01-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat/Montserrat-ExtraLight.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat/Montserrat-Light.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat/Montserrat-Regular.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat/Montserrat-Medium.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat/Montserrat-SemiBold.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat/Montserrat-Bold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat/Montserrat-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat/Montserrat-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: barlow;
+  src: url(../font/Barlow/Barlow-ExtraLight.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: barlow;
+  src: url(../font/Barlow/Barlow-Light.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: barlow;
+  src: url(../font/Barlow/Barlow-Regular.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: barlow;
+  src: url(../font/Barlow/Barlow-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: barlow;
+  src: url(../font/Barlow/Barlow-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: barlow;
+  src: url(../font/Barlow/Barlow-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: barlow;
+  src: url(../font/Barlow/Barlow-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: barlow;
+  src: url(../font/Barlow/Barlow-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.padding-zero {
+  padding: 0;
+}
+
+/* navigation */
+.navbar {
+  background-color: #e8e6e6;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  color: #000 !important;
+  font-weight: 400;
+  font-family: 'barlow';
+}
+
+.navbar a:hover {
+  color: #f8c853 !important;
+}
+
+.navbar .active {
+  color: #f8c853 !important;
+}
+
+.navbar img {
+  width: 150px;
+}
+
+.footer {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff4040;
+}
+
+.footer .soical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .soical-icon {
+  padding: .8rem 1rem;
+}
+
+.footer .soical-icon i {
+  font-size: 1rem;
+  width: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: clamp(8px, 5vw, 18px);
+  color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .copyright {
+    margin-top: 1.5rem;
+  }
+}
+
+body {
+  font-family: Montserrat;
+}
+
+.banner {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.32)), to(rgba(0, 0, 0, 0.26))), url(../img/theme/main-banner.png);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.26)), url(../img/theme/main-banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 522px;
+  margin-top: 100px;
+}
+
+.banner-space {
+  text-align: center;
+  padding: clamp(20px, 1.2rem, 5rem);
+}
+
+.banner-space p {
+  color: white;
+  font-weight: 300;
+  font-size: clamp(10px, 18px, 25px);
+}
+
+.banner-space .banner-txt {
+  color: #f8c853;
+  font-size: clamp(15px, 2vw, 70px);
+  font-weight: 800;
+  line-height: clamp(20px, 2.5vw, 70px);
+  padding: clamp(20px, 2.5vw, 70px);
+  width: clamp(250px, 50%, 700px);
+  margin: 1rem auto;
+}
+
+.banner .btn {
+  background-color: #f8c853;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px;
+  width: clamp(160px, 10vw, 250px);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.subject {
+  background-color: #e8e6e6;
+}
+
+.subject .main-subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: clamp(18px, 2rem, 70px);
+}
+
+.subject .main-subject a {
+  position: relative;
+  z-index: 1;
+}
+
+.subject .main-subject a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.about-us {
+  background-color: #f8c853;
+  padding: clamp(35px, 5vw, 70px);
+}
+
+.about-us-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: clamp(16px, 8vw, 40px);
+  padding-bottom: 10px;
+}
+
+.about-us-sub-title {
+  font-weight: 300;
+  font-size: clamp(10px, 5vw, 22px);
+}
+
+.about-us-sub-title span {
+  font-weight: 500;
+}
+
+.about-us-para {
+  font-weight: 400;
+  font-size: clamp(10px, 4vw, 16px);
+}
+
+.about-us .reposive {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.about-us .reposive .video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.why-nof {
+  padding: clamp(20px, 5vw, 35px);
+}
+
+.why-nof-title {
+  font-weight: 600;
+  font-size: clamp(16px, 8vw, 40px);
+  color: #f8c853;
+  padding: 1rem 0;
+}
+
+.why-nof img {
+  width: 100%;
+}
+
+.practise-book {
+  background-image: url("../img/theme/practice-book-image.png");
+  height: auto;
+  padding: 4rem;
+  padding-bottom: 150px;
+}
+
+.practise-book .warp {
+  padding: 1rem 0;
+}
+
+.practise-book .warp .flexes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 0;
+}
+
+.practise-book .warp .flexes .practise-book-container {
+  position: relative;
+  width: 217px;
+  height: 221px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.practise-book .warp .flexes .practise-book-container-img {
+  width: 217px;
+  height: 212px;
+}
+
+.practise-book .warp .flexes .practise-book-container-detail {
+  background-color: #fd5;
+  position: absolute;
+  top: 180px;
+  left: 5px;
+  width: 207px;
+  height: 166px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.practise-book .warp .flexes .practise-book-container-detail p {
+  padding-top: 20px;
+}
+
+.practise-book .warp .flexes .practise-book-container-detail .btn3 {
+  background-color: #fff;
+  border: 2px solid #404040;
+  font-size: 16px;
+  padding: 10px;
+  width: 260px;
+  margin: 10px;
+  color: #000;
+  border-radius: 25px;
+  cursor: pointer;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.practise-book .warp .flexes .practise-book-container-detail .btn3:hover {
+  background-color: #404040;
+}
+
+.practise-book .warp .flexes .practise-book-container-detail .btn3 a {
+  text-decoration: none;
+  color: #555;
+}
+
+.practise-book .warp .flexes .practise-book-container-detail .btn3:hover a {
+  color: #fff;
+}
+
+.links {
+  background-color: #c7c7c7;
+  padding: 4rem 0;
+}
+
+.links .warp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links .warp h6 {
+  font-family: barlow;
+  font-size: clamp(12px, 1rem, 17px);
+  font-weight: 600;
+  text-align: center;
+}
+
+.links .warp ul {
+  padding: 0;
+}
+
+.links .warp ul li {
+  list-style: none;
+  line-height: 2.5;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.links .warp ul li a {
+  color: #555;
+  text-decoration: none;
+  font-family: barlow;
+  font-weight: 300;
+  font-size: clamp(14px, 1rem, 18px);
+}
+
+.about {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about-para {
+  background-color: #f8c853;
+  padding: clamp(25px, 45vw, 80px);
+}
+
+.about-para h1 {
+  font-size: clamp(15px, 3vw, 2rem);
+  font-family: Montserrat-Bold;
+  color: #525252;
+}
+
+.about-para p {
+  font-size: clamp(15px, 4vw, 1.2rem);
+  font-family: Montserrat Regular;
+}
+
+.about-para ol {
+  line-height: 2;
+}
+
+.Conducts img {
+  width: 100%;
+}
+
+.map {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.map img {
+  width: 100%;
+}
+
+.map p {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+section.why {
+  margin-top: 100px;
+  background-color: #f8c853;
+}
+
+section.why .why-para {
+  padding: 30px 50px 0;
+  line-height: 35px;
+  font-family: Montserrat Regular;
+  font-size: clamp(12px, 3vw, 1.1rem);
+}
+
+section.why video {
+  width: 100%;
+  padding: 5%;
+}
+
+section.why .btn {
+  background-color: red;
+  border-radius: 0;
+  border: 0;
+  margin: 20px 50px;
+}
+
+section.offer .heading {
+  font-size: clamp(20px, 2vw, 1.5rem);
+}
+
+section.offer ol {
+  font-size: clamp(14px, 1vw, 1rem);
+}
+
+section.offer img {
+  width: 100%;
+}
+
+section.prize {
+  margin-top: 150px;
+}
+
+section.prize .sm-heading {
+  font-size: .7rem;
+}
+
+section.prize .big-heading {
+  font-family: Montserrat;
+  color: #525252;
+  font-weight: 600;
+}
+
+section.prize img {
+  width: 100%;
+}
+
+section.prize ol {
+  font-family: Montserrat;
+  font-weight: 300;
+}
+
+section.prize ol p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+section.prize-phase {
+  background: #f8c853;
+  padding: clamp(10px, 2vw, 25px);
+}
+
+section.prize-phase h2 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: #525252;
+  font-size: clamp(18px, 3vw, 30px);
+}
+
+section.prize-phase ol {
+  letter-spacing: 1px;
+  line-height: 31px;
+  font-weight: 300;
+  font-size: clamp(12px, 2vw, 17px);
+  padding: clamp(10px, 1vw, 15px) clamp(15px, 2vw, 30px);
+}
+
+section.prize-phase ol p {
+  line-height: 20px;
+  font-size: 12px;
+}
+
+section.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100%;
+  padding: 2rem;
+}
+
+section.price img {
+  max-width: 100%;
+}
+
+section.download {
+  margin-top: 100px;
+  background-color: #f8c853;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.download h1 {
+  font-family: 'Barlow';
+  letter-spacing: clamp(3px, 1vw, 10px);
+  font-weight: 700;
+  font-size: clamp(15px, 4vw, 46px);
+  color: #000;
+}
+
+section.download .btn-sub {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+section.download .pdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.download .pdf .e-brochure, section.download .pdf .e-brochure-2 {
+  padding: clamp(20px, 4vw, 7rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: clamp(300px, 32vw, 450px);
+}
+
+section.download .pdf .e-brochure {
+  background: #fff url(../img/theme/brochure-bg.png);
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+section.download .pdf .e-brochure h3 {
+  font-family: barlow-medium,barlow,sans-serif;
+  padding: 10px 2px;
+  font-size: clamp(15px, 2vw, 22px);
+  text-align: center;
+}
+
+section.download .pdf .e-brochure button {
+  border: none;
+  background: linear-gradient(150deg, #83f5eb 0%, #b5f395 100%);
+  width: 100%;
+  -webkit-transition: all 0.2s ease, visibility 0s;
+  transition: all 0.2s ease, visibility 0s;
+}
+
+section.download .pdf .e-brochure-2 {
+  background: #e6b89c url(../img/theme/brochure-bg-line.png);
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+section.download .pdf .e-brochure-2 h3 {
+  font-family: barlow-medium,barlow,sans-serif;
+  padding: 10px 2px;
+  font-size: clamp(15px, 2vw, 22px);
+  text-align: center;
+  color: #fff;
+}
+
+section.download .pdf .e-brochure-2 button {
+  border: none;
+  background: linear-gradient(150deg, #83f5eb 0%, #b5f395 100%);
+  width: 100%;
+  -webkit-transition: all 0.2s ease, visibility 0s;
+  transition: all 0.2s ease, visibility 0s;
+}
+
+section.download .syllabus-heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+section.download .syllabus {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.download .syllabus .syllabus-container {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0 10px;
+  text-align: center;
+}
+
+section.download .syllabus .syllabus-container .btn-syllabus {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 452px) {
+  section.download .pdf {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */

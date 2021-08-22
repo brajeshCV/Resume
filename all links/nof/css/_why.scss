@@ -1,0 +1,38 @@
+section.why{
+    margin-top: 100px;
+    background-color: $primaryColor;
+
+    .why-para{
+        padding: 30px 50px 0;
+        line-height: 35px;
+        font-family: Montserrat Regular;
+        font-size: clamp(12px, 3vw, 1.1rem);
+    }
+
+    video{
+        width: 100%;
+        padding: 5%;
+    }
+
+    .btn{
+        background-color: red;
+        border-radius: 0;
+        border: 0;
+        margin: 20px 50px;
+    }
+}
+
+section.offer{
+
+    .heading{
+        font-size: clamp(20px, 2vw, 1.5rem);
+    }
+
+    ol{
+        font-size: clamp(14px, 1vw, 1rem);
+    }
+
+    img{
+        width: 100%;
+    }
+}
